@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="3"
+    android:rowCount="3"
+    android:layout_gravity="center_vertical"
+    tools:context=".Select_Tag">
+
+
+    <CheckBox
+        android:id="@+id/tag1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="164dp"
+        android:layout_marginBottom="40dp"
+        android:text="#camera"
+        app:layout_constraintBottom_toTopOf="@+id/tag4"
+        app:layout_constraintEnd_toStartOf="@+id/tag2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/tag2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="164dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        android:text="#car"
+        app:layout_constraintBottom_toTopOf="@+id/tag5"
+        app:layout_constraintEnd_toStartOf="@+id/tag3"
+        app:layout_constraintStart_toEndOf="@+id/tag1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/tag3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="164dp"
+        android:layout_marginBottom="40dp"
+        android:text="#computer"
+        app:layout_constraintBottom_toTopOf="@+id/tag6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tag2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/tag4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="#contest"
+        app:layout_constraintEnd_toStartOf="@+id/tag5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tag1" />
+
+    <CheckBox
+        android:id="@+id/tag5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="40dp"
+        android:text="#food"
+        app:layout_constraintEnd_toStartOf="@+id/tag6"
+        app:layout_constraintStart_toEndOf="@+id/tag4"
+        app:layout_constraintTop_toBottomOf="@+id/tag2" />
+
+    <CheckBox
+        android:id="@+id/tag6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="#job"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tag5"
+        app:layout_constraintTop_toBottomOf="@+id/tag3" />
+
+    <CheckBox
+        android:id="@+id/tag7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="#sport"
+        app:layout_constraintEnd_toStartOf="@+id/tag8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tag4" />
+
+    <CheckBox
+        android:id="@+id/tag8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="40dp"
+        android:text="#tour"
+        app:layout_constraintEnd_toStartOf="@+id/tag9"
+        app:layout_constraintStart_toEndOf="@+id/tag7"
+        app:layout_constraintTop_toBottomOf="@+id/tag5" />
+
+    <CheckBox
+        android:id="@+id/tag9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="#used"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tag8"
+        app:layout_constraintTop_toBottomOf="@+id/tag6" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="158dp"
+        android:text="Choose your Tags"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="363dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="13dp"
+        android:text="회원가입"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.314"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tag7" />
+</androidx.constraintlayout.widget.ConstraintLayout>
